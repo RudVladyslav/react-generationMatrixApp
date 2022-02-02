@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  height: 100px;
+  background-color: lightskyblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
+  border-bottom: 4px solid lightcyan;
+
+  h3 {
+    font-size: large;
+  }
+
+  &-title {
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+  }
+}
+
+.spreadsheet {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+
+  &__line {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+
+    &-clear {
+      cursor: pointer;
+    }
+
+    &-clear.active {
+      background-color: lightcyan;
+    }
+  }
+
+  &__sum-amount {
+    background-color: lightskyblue;
+    font-weight: bold;
+    cursor: help;
+    transition: .2s;
+  }
+
+  &__sum-amount:hover {
+    background-color: lightcyan;
+    transition: .2s;
+  }
+
+}
+
+.spreadsheet__average {
+  display: flex;
+}
+
+.spreadsheet__amount-average {
+  background-color: khaki;
+  font-weight: bold;
+}
+
+.spreadsheet__sum-column__wrapper {
+  display: flex;
+  align-items: center;
+
+  button {
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    margin-left: 30px;
+    background-color: darkred;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    color: white;
+    transition: .2s;
+  }
+
+  button:hover {
+    border: 1px solid darkred;
+    background-color: white;
+    color: darkred;
+    transition: .2s;
+  }
+}
+
+
+.button-common {
+  cursor: pointer;
+  margin-top: 20px;
+  width: 250px;
+  height: 30px;
+  background-color: lightskyblue;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  font-family: 'Montserrat', sans-serif;
+  color: aliceblue;
+  font-weight: bold;
+  transition: .2s;
+  font-size: medium;
+}
+
+.button-common:hover {
+  border: 1px solid lightskyblue;
+  background-color: white;
+  color: lightskyblue;
+  transition: .2s;
+}
+
+input {
+  padding: 5px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  font-size: large;
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
